@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll animation</title>
+</head>
+
+<body>
+    <style>
+        #list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .Pokemon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            opacity: 0;
+            scale: 0;
+            transition: 600ms ease;
+        }
+
+        .Pokemon.Show {
+            opacity: 1;
+            scale: 1;
+        }
+    </style>
+    <script type="module" src="observer-how-use.js"></script>
+    <ul id="list">
+    </ul>
+</body>
+
+</html>
